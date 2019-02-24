@@ -1,14 +1,13 @@
 package book;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
 public class ReadFileCategory {
 
-    public void readFileCategory() throws IOException {
+    public ArrayList<Category> readFileCategory() throws IOException {
         FileReader fileReader = new FileReader("H:\\SDA\\gr14\\Bookstore\\src\\main\\java\\categories.csv");
         BufferedReader bufferedReader = new BufferedReader(fileReader);
         ArrayList<Category> categories = new ArrayList<>();
@@ -24,6 +23,6 @@ public class ReadFileCategory {
         } while (category != null);
         System.out.println(categories);
         bufferedReader.close();
-
+        return categories;
     }
 }

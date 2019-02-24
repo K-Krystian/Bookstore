@@ -1,6 +1,7 @@
 package menu;
 
 import book.Book;
+import book.Category;
 import book.ReadFileCategory;
 
 import java.io.BufferedReader;
@@ -17,16 +18,19 @@ public class ReadFileBooks {
         BufferedReader bufferedReader = new BufferedReader(fileReader);
         ArrayList<Book> books = new ArrayList<>();
         String text = bufferedReader.readLine();
+        ArrayList<Category> categories = new ReadFileCategory().readFileCategory();
         do {
             String[] dividedString = text.split("\\;");
 
             String categoryID = dividedString[6];
+            for (Category category : categories) {
 
+            }
             Book book1 = new Book(dividedString[0], dividedString[1], dividedString[2], dividedString[3],
-                    dividedString[4],dividedString[5], null);
+                    dividedString[4], dividedString[5], null);
             books.add(book1);
             text = bufferedReader.readLine();
-        } while(text != null);
+        } while (text != null);
 
         System.out.println(books);
         bufferedReader.close();
