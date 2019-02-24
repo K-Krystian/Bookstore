@@ -1,16 +1,23 @@
+import book.ReadFileAuthor;
+import book.ReadFileCategory;
 import menu.Option;
-import menu.ReadFile;
+import menu.ReadFileBooks;
 
 import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-//        Option option = new Option();
-//        option.chooseOption();
+        Option option = new Option();
+        option.chooseOption();
 
-        ReadFile readFile = new ReadFile();
-        readFile.readFile();
+//        ReadFileBooks readFileBooks = new ReadFileBooks();
+//        readFileBooks.readFileBooks();
+//
+//        ReadFileAuthor readFileAuthor = new ReadFileAuthor();
+//        readFileAuthor.readFileAuthor();
+//
+//        ReadFileCategory readFileCategory = new ReadFileCategory();
+//        readFileCategory.readFileCategory();
 
-        Book book = new Book("tytyl", "213", "35340");
     }
 }
