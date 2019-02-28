@@ -24,7 +24,9 @@ public class ReadFileBooks {
 
             String categoryID = dividedString[6];
             for (Category category : categories) {
+                if (category.getIdCategory() == "3"){
 
+                }
             }
             Book book1 = new Book(dividedString[0], dividedString[1], dividedString[2], dividedString[3],
                     dividedString[4], dividedString[5], null);
