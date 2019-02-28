@@ -1,4 +1,4 @@
-package menu;
+package book;
 
 import book.Book;
 import book.Category;
