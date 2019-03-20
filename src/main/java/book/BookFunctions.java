@@ -90,7 +90,8 @@ public class BookFunctions {
         double average = books.stream().mapToDouble(Book::getYear).sum();
         return average / books.size();
     }
-
+//  Zwraca mi pustą listę. Nie mogę dojśc do tego, co było
+//    wcześniej, bo ta metoda działała.
     public List<Book> anyBookAfter2003(List<Book> books) {
         List<Book> rList = new ArrayList<>();
         for (Book book : books) {
