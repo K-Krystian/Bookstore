@@ -1,14 +1,13 @@
 package book;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
 public class ReadFileAuthor {
 
-    public void readFileAuthor() throws IOException {
+    public ArrayList<Author> readFileAuthor() throws IOException {
         FileReader fileReader = new FileReader("H:\\SDA\\gr14\\Bookstore\\src\\main\\java\\authors.csv");
         BufferedReader bufferedReader = new BufferedReader(fileReader);
         ArrayList<Author> authors = new ArrayList<>();
@@ -25,6 +24,7 @@ public class ReadFileAuthor {
 
         System.out.println(authors);
         bufferedReader.close();
+        return authors;
     }
 
 }

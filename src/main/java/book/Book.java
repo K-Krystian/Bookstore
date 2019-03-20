@@ -1,13 +1,17 @@
 package book;
 
 public class Book {
+    String id;
     String title;
     String isbn;
-    String year;
-    String id;
+    int year;
     String typeOfBinding;
-    String author;
+    Author author;
     Category category;
+
+    public Book(String id, String jem_dżem, String isbn, int year, String t, String ciekawy_autor, String s) {
+
+    }
 
     public String getId() {
         return id;
@@ -25,11 +29,11 @@ public class Book {
         this.typeOfBinding = typeOfBinding;
     }
 
-    public String getAuthor() {
+    public Author getAuthor() {
         return author;
     }
 
-    public void setAuthor(String author) {
+    public void setAuthor(Author author) {
         this.author = author;
     }
 
@@ -41,11 +45,11 @@ public class Book {
         this.category = category;
     }
 
-    public Book(String id,String title, String isbn, String year, String typeOfBinding, String author, Category category) {
+    public Book(String id, String title, String isbn, int year, String typeOfBinding, Author author, Category category) {
+        this.id = id;
         this.title = title;
         this.isbn = isbn;
         this.year = year;
-        this.id = id;
         this.typeOfBinding = typeOfBinding;
         this.author = author;
         this.category = category;
@@ -67,12 +71,13 @@ public class Book {
         this.isbn = isbn;
     }
 
-    public String getYear() {
+    public int getYear() {
         return year;
     }
 
-    public void setYear(String year) {
+    public int setYear(int year) {
         this.year = year;
+        return year;
     }
 
     @Override
