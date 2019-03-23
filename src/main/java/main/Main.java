@@ -1,7 +1,5 @@
 package main;
 
-import book.Book;
-import book.BookFunctions;
 import menu.Option;
 
 import java.io.IOException;

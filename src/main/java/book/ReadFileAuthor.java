@@ -22,7 +22,6 @@ public class ReadFileAuthor {
             author = bufferedReader.readLine();
         } while (author != null);
 
-        System.out.println(authors);
         bufferedReader.close();
         return authors;
     }

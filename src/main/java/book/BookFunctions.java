@@ -5,8 +5,6 @@ import java.util.stream.Collectors;
 
 public class BookFunctions {
 
-    int id = 0;
-
     public Book findBook(String isbn, List<Book> books) {
         for (Book book : books) {
             if (book.isbn.equals(isbn)) {

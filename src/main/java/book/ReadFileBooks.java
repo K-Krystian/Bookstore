@@ -25,7 +25,6 @@ public class ReadFileBooks {
             text = bufferedReader.readLine();
         } while (text != null);
 
-        System.out.println(books);
         bufferedReader.close();
         return books;
     }

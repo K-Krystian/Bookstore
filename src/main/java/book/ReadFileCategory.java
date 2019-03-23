@@ -21,7 +21,7 @@ public class ReadFileCategory {
             categories.add(category1);
             category = bufferedReader.readLine();
         } while (category != null);
-        System.out.println(categories);
+
         bufferedReader.close();
         return categories;
     }

@@ -15,10 +15,6 @@ public class Category {
         return idCategory;
     }
 
-    public void setIdCategory(String idCategory) {
-        this.idCategory = idCategory;
-    }
-
     public String getName() {
         return name;
     }

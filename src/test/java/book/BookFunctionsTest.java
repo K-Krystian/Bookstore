@@ -16,12 +16,12 @@ public class BookFunctionsTest {
 
     @Before
     public void setup() {
-        Book book1 = new Book("1", "Jem dżem", "3940391820192", 1973, "T", "Ciekawy Autor", "1");
-        Book book2 = new Book("2", "Mentalista", "27503292817212", 2002, "M", "Autor Mniej Ciekawy", "2");
-        Book book3 = new Book("3", "Liga H", "4930292019257", 1999, "T", "Atuor jak Autor", "1");
-        Book book4 = new Book("4", "Calistenika", "294857458172", 2008, "T", "To nie Autor", "3");
-        Book book5 = new Book("5", "Psychologia społeczna", "102810291820", 2000, "M", "Artur Autor", "2");
-        Book book6 = new Book("6", "UltraBook", "6847483927283", 1991, "T", "Twardy Autor", "3");
+        Book book1 = new Book("1", "Jem dżem", "3940391820192", 1973, "T", null, null);
+        Book book2 = new Book("2", "Mentalista", "27503292817212", 2002, "M", null, null);
+        Book book3 = new Book("3", "Liga H", "4930292019257", 1999, "T", null, null);
+        Book book4 = new Book("4", "Calistenika", "294857458172", 2008, "T", null, null);
+        Book book5 = new Book("5", "Psychologia społeczna", "102810291820", 2000, "M", null, null);
+        Book book6 = new Book("6", "UltraBook", "6847483927283", 1991, "T", null, null);
         books.add(book1);
         books.add(book2);
         books.add(book3);
@@ -197,13 +197,14 @@ public class BookFunctionsTest {
         }
     }
 
-//     Nie wiem jak napisać test
+    //     Nie wiem jak napisać test
     @Test
     public void testReturnMap() {
         Map<String, Book> book = bookFunctions.returnMap(books);
 
     }
-//  Tutaj też mam problem z testem
+
+    //  Tutaj też mam problem z testem
     @Test
     public void testSortedByTheEarliest() {
         List<Book> book = bookFunctions.sortedByTheEarliest(books);

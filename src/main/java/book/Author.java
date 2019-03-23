@@ -11,28 +11,20 @@ public class Author {
         this.age = age;
     }
 
-    public String getAuthorId() {
-        return authorId;
+    public void setAge(String age) {
+        this.age = age;
     }
 
-    public void setAuthorId(String authorId) {
-        this.authorId = authorId;
+    public String getAuthorId() {
+        return authorId;
     }
 
     public String getAuthorName() {
         return authorName;
     }
 
-    public void setAuthorName(String authorName) {
-        this.authorName = authorName;
-    }
-
     public String getAge() {
         return age;
-    }
-
-    public void setAge(String age) {
-        this.age = age;
     }
 
     @Override
